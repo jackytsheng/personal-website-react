@@ -25,11 +25,35 @@ h2{
     color: #71c9ce;
     font-weight: normal;
 }
-h3{
+h3 {
     font-family: 'Montserrat', sans-serif;
     color: #a6e3e9;
     font-weight: normal;
 }
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  color: #a6e3e9;
+  font-weight: normal;
+}
+
+h6{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  font-family: 'Montserrat', sans-serif;
+}
+li {
+  font-family: 'Montserrat', sans-serif;
+}
+ul {
+  font-family: 'Montserrat', sans-serif;
+}
+
 table{
   margin: 0 auto;
   border-spacing: 1px;
@@ -41,28 +65,30 @@ table{
   line-height: 1.5;
 }
 .jackyprofile{
-
-  height: 10%;
-  width: 10%;
+  height: 150px;
+  width: 150px;
   margin-top: 3%;
 
 }
 .BME{
-  width: 20%;
+  width: 150px;
   float: left;
-  background-color: grey;
+
   border-radius: 50%;
   margin-right: 30px;
 
 }
+
 .web{
-  width: 25%;
+  width: 150px;
   background-color: #71c9ce;
   float: right;
   margin-left: 30px;
 
 }
-
+.CV {
+  padding-right: 2rem;
+}
 .top-cloud{
   position: relative;
   left:20%;
@@ -70,6 +96,19 @@ table{
 .bottom-cloud{
   position: absolute;
   left:10%
+}
+
+.project-img{
+  padding: 1%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.project-card{
+  margin-bottom: 20px;
+}
+
+.card-text{
+  margin-top: 20px;
 }
 hr {
   border-style: none;
@@ -108,4 +147,26 @@ hr {
 .main {
   margin-left: 160px; /* Same as the width of the sidebar */
   padding: 0 10px;
+}
+.bottom-container{
+  background-color: #f1f1f1;
+}
+.contact-detail > a{
+  text-decoration: none;
+  font-size: 3rem;
+  color:   #a6e3e9;
+}
+.contact-detail > a:hover{
+  color: #b8e9ee;
+
+}
+.footer-link{
+  margin-top: 5px;
+  margin: 10px;
+  padding: 5px;
+}
+
+.footer{
+  padding: 30px;
+  font-size: 15px;
 }
