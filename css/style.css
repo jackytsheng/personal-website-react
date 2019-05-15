@@ -3,6 +3,14 @@
 
 }
 
+.navbar{
+
+  padding-bottom: 0;
+}
+.hill{
+  width: 70%;
+  height: auto;
+}
 body {
   margin: 0;
   text-align: center;
@@ -65,9 +73,9 @@ table{
   line-height: 1.5;
 }
 .jackyprofile{
-  height: 150px;
-  width: 150px;
-  margin-top: 3%;
+  height: 200px;
+  width: 200px;
+  margin-bottom: 1%;
 
 }
 .BME{
@@ -90,12 +98,14 @@ table{
   padding-right: 2rem;
 }
 .top-cloud{
+  width: 20%;
   position: relative;
   left:20%;
 }
 .bottom-cloud{
+  width: 20%;
   position: absolute;
-  left:10%
+  left:10%;
 }
 
 .project-img{
@@ -113,6 +123,8 @@ table{
 hr {
   border-style: none;
   border-top-style: dotted;
+  margin-top: 5%;
+  margin-bottom: 5%;
   border-width: 10px;
   width: 10%;
 }
@@ -165,8 +177,12 @@ hr {
   margin: 10px;
   padding: 5px;
 }
-
 .footer{
   padding: 30px;
   font-size: 15px;
+}
+
+.yourElement {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
