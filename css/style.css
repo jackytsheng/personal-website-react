@@ -182,7 +182,6 @@ hr {
   font-size: 15px;
 }
 
-.yourElement {
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+.btn{
+  margin: 10px;
 }
