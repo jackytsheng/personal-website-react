@@ -1,7 +1,4 @@
-.layout{
-  display: flex;
-  flex-direction: column;
+.layout {
+  background-color: #dbe2ef;
 }
-.layout__page{
-  flex:1;
-}
+/*# sourceMappingURL=App.css.map */

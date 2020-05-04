@@ -1,0 +1,23 @@
+.layout {
+  background-color: #dbe2ef;
+}
+
+.page__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  background-color: #3f72af;
+  width: 100px;
+  height: 300px;
+}
+
+.page__content, .page__profile {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+/*# sourceMappingURL=Page.css.map */

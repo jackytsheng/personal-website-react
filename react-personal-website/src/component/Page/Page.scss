@@ -1,0 +1,14 @@
+@import '../App/App.scss';
+
+.page__wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: $theme-color-blue;
+  width: 100px;
+  height:300px;
+}
+
+.page__content,.page__profile {
+  flex: 1;
+}
