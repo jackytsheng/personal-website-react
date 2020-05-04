@@ -1,0 +1,15 @@
+@import './../../../../../../../App/App.scss';
+
+.item{
+  text-decoration: none;
+  background-color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height:40px;
+  color: $theme-color-blue;
+}
+.item:active{
+  color: blue;
+}

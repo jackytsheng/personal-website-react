@@ -1,0 +1,25 @@
+.layout {
+  background-color: #dbe2ef;
+}
+
+.item {
+  text-decoration: none;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #3f72af;
+}
+
+.item:active {
+  color: blue;
+}
+/*# sourceMappingURL=item.css.map */

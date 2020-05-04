@@ -1,0 +1,10 @@
+
+.nav{
+  display: flex;
+  flex-direction: column;
+  &__filler{
+    flex:1;
+  }
+}
+
+
