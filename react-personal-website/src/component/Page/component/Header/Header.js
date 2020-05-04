@@ -4,7 +4,9 @@ import Nav from './component/Nav';
 
 function Header(props) {
   return(
-    <Nav/>
+    <div className="header__wrapper">
+      <Nav/>
+    </div>
   );
 }
 

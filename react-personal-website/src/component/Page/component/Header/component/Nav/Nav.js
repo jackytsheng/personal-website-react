@@ -1,9 +1,15 @@
-import React from 'react';
+import React from "react";
+import Item from "./component/Item";
 
-
-function Nav(props){
+function Nav(props) {
   return (
-    <p> Hello</p>
+    <div className="Nav">
+      <Item className="nav__item" href="HOME"/>
+      <Item className="nav__item" href="ABOUT"/>
+      <Item className="nav__item" href="BLOCK"/>
+      <Item className="nav__item" href="PROJECT"/>
+      <Item className="nav__item" href="CONTACT"/>
+    </div>
   );
 }
 
