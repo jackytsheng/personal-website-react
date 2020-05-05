@@ -1,9 +1,9 @@
-@import '../App/App.scss';
+@import '../../index.scss';
 
 .page__wrapper {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 45px;
   background-color: $theme-color-blue;
 }
 

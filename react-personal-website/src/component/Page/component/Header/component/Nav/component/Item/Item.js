@@ -1,5 +1,5 @@
 import React from 'react';
-import './Item.module.css';
+import styles from './Item.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser,faBriefcase,faBook,faAddressCard,faHome} from '@fortawesome/free-solid-svg-icons'
 
@@ -13,7 +13,7 @@ const iconMapper={
 const Item = ({
   href
 }) => (
-<a className="item" href={href}>
+<a className = {`${styles.item} ${styles["item-active"]}`} href = {href} >
   <FontAwesomeIcon icon = {iconMapper[href]}/>
 </a>
 );

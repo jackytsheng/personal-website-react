@@ -1,19 +1,20 @@
 import React from 'react';
 import Header from './component/Header';
-import './Page.css'
+import styles from './Page.module.scss';
+import Content from './component/Content';
 
 function Page(props) {
   return(
-    <div className="page__wrapper">
+    <div className={styles.page__wrapper}>
       {/* <div className = "page__profile">
         <Profile/>
       </div> */}
-      <div className = "page__header">
+      <div className = {styles.page__header}>
         <Header/>
       </div>
-      {/* <div className = "page__content">
+      <div className = {styles.page__content} >
         <Content/>
-      </div> */}
+      </div>
     </div>
   )
 }

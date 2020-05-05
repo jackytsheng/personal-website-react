@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,CAAC;CACV",
     "sources": [
-        "index.scss"
+        "index.scss",
+        "_variable.scss"
     ],
     "names": [],
     "file": "index.css"

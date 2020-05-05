@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import style from './App.module.scss';
 import Page from '../Page';
 
 function App(){
   return (
-    <div className="layout">
+    <div className={style.layout}>
       <section className="layout__page">
         <Page/>
       </section>
