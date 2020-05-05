@@ -1,5 +1,5 @@
 import React from 'react';
-import './Item.css';
+import './Item.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser,faBriefcase,faBook,faAddressCard,faHome} from '@fortawesome/free-solid-svg-icons'
 
