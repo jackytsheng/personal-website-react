@@ -10,13 +10,24 @@ const iconMapper={
 "PROJECT": faBriefcase,
 "CONTACT": faAddressCard,
 }
-const Item = ({
-  href
-}) => (
-<a className = {`${styles.item} ${styles["item-active"]}`} href = {href} >
-  <FontAwesomeIcon icon = {iconMapper[href]}/>
-</a>
+const Item = (
+  props
+) => {
+const ItemClick =(evt)=>{
+  props.onClick(evt,props.href);
+}
+return (
+  <a
+    className={
+      props.activeState ? `${styles.item} ${styles.active}` : styles.item
+    }
+    href={props.href}
+    onClick={ItemClick}
+  >
+    <FontAwesomeIcon icon={iconMapper[props.href]} />
+  </a>
 );
+};
 
 
 export default Item;

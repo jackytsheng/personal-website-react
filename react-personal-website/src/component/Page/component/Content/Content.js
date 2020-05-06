@@ -5,43 +5,37 @@ import Home from "./component/Home";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
 
-const Content = (props) => {
-  const params = {
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  };
-
-  return (
-    <div className={styles.container}>
-      <Swiper {...params}>
-        <div>
-          <Home />
+class Content extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentPage:"HOME",
+    };
+  }
+  setCurrent(dir){
+    this.state.currentPage = dir;
+  }
+  render(){
+    const params = {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      spaceBetween: 0,
+    };
+    return (
+      <div className = {styles.container}>
+        <Swiper {...params}>
+          <div>
+            <Home />
+          </div>
+          <div>
+            <About />
+          </div>
+        </Swiper>
         </div>
-        <div>
-          <About />
-        </div>
-      </Swiper>
-    </div>
-    // <div className={styles.container}>
-    //   <Swiper {...params}>
-    //     <div>
-    //
-    //     </div>
-    //     <div>
-    //
-    //     </div>
-    //   </Swiper>
-    // </div>
-  );
+    );
+}
 };
 
 export default Content;
