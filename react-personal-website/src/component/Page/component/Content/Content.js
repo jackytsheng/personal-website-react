@@ -2,40 +2,35 @@ import React from "react";
 import styles from "./Content.module.scss";
 import About from "./component/About";
 import Home from "./component/Home";
-import Swiper from "react-id-swiper";
-import "swiper/css/swiper.css";
+import FlipPage from "react-flip-page";
 
 class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentPage:"HOME",
+      currentPage: "HOME",
     };
   }
-  setCurrent(dir){
-    this.state.currentPage = dir;
-  }
-  render(){
+  render() {
+    const Index = this.props.Index;
     const params = {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      spaceBetween: 0,
+      uncutPages:true,
     };
     return (
-      <div className = {styles.container}>
-        <Swiper {...params}>
-          <div>
-            <Home />
-          </div>
-          <div>
-            <About />
-          </div>
-        </Swiper>
-        </div>
+      <div className={styles.container}>
+        <FlipPage
+          {...params}
+          ref={(component) => {
+            this.flipPage = component;
+          }}
+        >
+          <Home />
+          <About />
+        </FlipPage>
+        <button onClick={()=>{this.flipPage.gotoPage(Index)}}>Previous</button>
+      </div>
     );
+  }
 }
-};
 
 export default Content;

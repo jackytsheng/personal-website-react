@@ -3,9 +3,9 @@ import Nav from './component/Nav';
 
 
 function Header(props) {
-  return(
+  return (
     <div className="header__wrapper">
-      <Nav/>
+      <Nav IndexChange={props.IndexChange} />
     </div>
   );
 }
