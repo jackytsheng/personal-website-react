@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "./component/Item";
-import './Nav.css'
+import styles from "./Nav.module.scss"
 
 class Nav extends React.Component {
   constructor(props) {
@@ -21,8 +21,8 @@ class Nav extends React.Component {
     const ItemActive = true;
     const clickFunction = this.handleClick.bind(this);
     return (
-      <nav className="nav">
-        <i className="nav__filler"></i>
+      <nav className={styles.container}>
+        <div className={styles.topFiller}></div>
         <Item
           href="HOME"
           activeState={this.state.currentDir === "HOME"}
@@ -48,6 +48,7 @@ class Nav extends React.Component {
           activeState={this.state.currentDir === "CONTACT"}
           onClick={clickFunction}
         />
+        <div className={styles.bottomFiller}></div>
       </nav>
     );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './component/Header';
 import styles from './Page.module.scss';
 import Content from './component/Content';
+import Profile from './component/Profile';
 
 class Page extends React.Component{
   constructor(props){
@@ -28,14 +29,14 @@ class Page extends React.Component{
     const Index = this.state.Index;
     const IndexChangeFunc = this.changeIndex.bind(this);
   return (
-    <div className={styles.page__wrapper}>
-      {/* <div className = "page__profile">
+    <div className={styles.wrapper}>
+      <div className = {styles.profile}>
         <Profile/>
-      </div> */}
-      <div className={styles.page__header}>
+      </div>
+      <div className={styles.header}>
         <Header IndexChange={IndexChangeFunc} />
       </div>
-      <div className={styles.page__content}>
+      <div className={styles.content}>
         <Content Index={Index} />
       </div>
     </div>

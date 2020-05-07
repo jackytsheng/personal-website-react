@@ -1,0 +1,58 @@
+
+@import './../../../../variable';
+@import './variable';
+
+.wrapper{
+  height:$content-height;
+  display:flex;
+  flex-direction: column;
+  position: relative;
+  &:hover{
+    .container{ 
+      top:$content-height - $picture-height; 
+      .picture{
+      opacity: 0.5;
+      }
+    }
+    .name{
+      bottom:$picture-height;
+      .description{
+        height:100px;
+      }
+    }
+  }
+}
+.container{
+    position:relative;
+    top:0;
+    width:$picture-width;
+    height:$picture-height;
+    margin:0;
+    overflow: hidden;
+    transition: top $transition-time;
+}
+.picture{
+  width:430px;
+}
+.name{
+  bottom:0;
+  transition: bottom $transition-time;
+  position: relative;
+  background-color:$theme-color-dark-blue;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex:1;
+  h2{
+    font-weight: 400;
+    margin:0;
+    color:white;
+  }
+}
+.description{
+  height:0;
+  top:$content-height - $picture-height;
+  position: absolute;
+  background-color: red;
+  transition: height $transition-time $transition-time ;
+}

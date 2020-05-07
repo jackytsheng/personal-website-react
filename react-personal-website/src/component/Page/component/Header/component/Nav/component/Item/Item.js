@@ -18,8 +18,8 @@ const ItemClick =(evt)=>{
 }
 return (
   <a
-    className={
-      props.activeState ? `${styles.item} ${styles.active}` : styles.item
+    className={`
+      ${props.href === "HOME"? styles.itemFirst:""} ${props.activeState ? `${styles.item} ${styles.active}` : styles.item}`
     }
     href={props.href}
     onClick={ItemClick}

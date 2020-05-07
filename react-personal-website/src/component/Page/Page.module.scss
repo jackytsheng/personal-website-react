@@ -1,12 +1,12 @@
 @import '../../index.scss';
 
-.page__wrapper {
+.wrapper {
   display: flex;
   justify-content: center;
   padding: 45px;
   background-color: $theme-color-blue;
 }
 
-.page__content,.page__profile {
+.content,.profile {
   flex: 1;
 }
