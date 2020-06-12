@@ -6,16 +6,16 @@ const Profile = (props) => {
   
   return (
     <div className={styles.wrapper}>
-    <figure className={styles.container}>
-      <img
-        className={styles.picture}
-        src={require("./img/profile.PNG")}
-      ></img>
-    </figure>
-    <div className ={styles.name}>
-      <h2>JIAJIN ZHENG</h2>
-      {/* <div className={styles.description}>Hello My name is </div> */}
-    </div>
+      <figure className={styles.container}>
+        <img
+          className={styles.picture}
+          src={require("./img/profile.PNG")}
+        ></img>
+      </figure>
+      <div className={styles.name}>
+        <h2>JIAJIN ZHENG</h2>
+      </div>
+      <div className={styles.description}>Hello My name is </div>
     </div>
   );
 }

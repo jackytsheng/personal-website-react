@@ -1,58 +1,64 @@
+@import "./variable";
 
-@import './../../../../variable';
-@import './variable';
-
-.wrapper{
-  height:$content-height;
-  display:flex;
+.wrapper {
+  height: $content-height;
+  display: flex;
   flex-direction: column;
   position: relative;
-  &:hover{
-    .container{ 
-      top:$content-height - $picture-height; 
-      .picture{
-      opacity: 0.5;
-      }
+  &:hover {
+    .container {
+      top: $content-height - $picture-height;
     }
     .name{
-      bottom:$picture-height;
-      .description{
-        height:100px;
-      }
+      top:0;
+    }
+    .description{
+      visibility: visible;
+      top:$content-height - $picture-height;
+      bottom:0;
     }
   }
 }
-.container{
-    position:relative;
-    top:0;
-    width:$picture-width;
-    height:$picture-height;
-    margin:0;
-    overflow: hidden;
-    transition: top $transition-time;
-}
-.picture{
-  width:430px;
-}
-.name{
-  bottom:0;
-  transition: bottom $transition-time;
+
+.container {
   position: relative;
-  background-color:$theme-color-dark-blue;
-  display:flex;
+  top: 0;
+  width: $picture-width;
+  height: $picture-height;
+  margin: 0;
+  overflow: hidden;
+  transition: top $transition-time;
+}
+.picture {
+  width: 430px;
+}
+
+.description{
+  bottom: $content-height - $picture-height;
+  top:$content-height;
+  transition-property: bottom top;
+  transition-duration: $transition-time;
+  position: absolute;
+  background-color:black;
+  opacity: 0.3;
+  width: 100%;
+  visibility: hidden;
+  overflow: hidden;
+}
+.name {
+  transition-property: top bottom;
+  transition-duration: $transition-time;
+  width: 100%;
+  top: $picture-height;
+  position: absolute;
+  height: $content-height - $picture-height;
+  background-color: $theme-color-dark-blue;
+  display: flex;
   justify-content: center;
   align-items: center;
-  flex:1;
-  h2{
+  h2 {
     font-weight: 400;
-    margin:0;
-    color:white;
+    margin: 0;
+    color: white;
   }
-}
-.description{
-  height:0;
-  top:$content-height - $picture-height;
-  position: absolute;
-  background-color: red;
-  transition: height $transition-time $transition-time ;
 }
