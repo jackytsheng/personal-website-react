@@ -14,6 +14,7 @@ class Nav extends React.Component {
     evt.preventDefault();
     this.props.IndexChange(dir);
     this.setState({
+      
       currentDir: dir,
     });
   }
