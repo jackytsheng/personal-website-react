@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Profile.module.scss';
-
+import TraceSvg from './img/Svg';
 
 const Profile = (props) => {
   
@@ -15,7 +15,9 @@ const Profile = (props) => {
       <div className={styles.name}>
         <h2>JIAJIN ZHENG</h2>
       </div>
-      <div className={styles.description}>Hello My name is </div>
+      <div className={styles.description}>
+        <TraceSvg />
+      </div>
     </div>
   );
 }

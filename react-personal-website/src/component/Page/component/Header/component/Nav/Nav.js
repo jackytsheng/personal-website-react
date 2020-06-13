@@ -8,6 +8,7 @@ class Nav extends React.Component {
     this.state = {
       currentDir: "HOME",
     };
+    this.handleClick = this.handleClick.bind(this);
   }
   
   handleClick(evt, dir) {
@@ -20,7 +21,7 @@ class Nav extends React.Component {
   }
   render() {
     const ItemActive = true;
-    const clickFunction = this.handleClick.bind(this);
+    const clickFunction= this.handleClick;
     return (
       <nav className={styles.container}>
         <div className={styles.topFiller}></div>

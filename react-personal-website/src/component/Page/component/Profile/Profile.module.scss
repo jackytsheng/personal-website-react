@@ -39,8 +39,7 @@
   transition-property: bottom top;
   transition-duration: $transition-time;
   position: absolute;
-  background-color:black;
-  opacity: 0.3;
+  background-color: rgba(0,0,0,0.3);
   width: 100%;
   visibility: hidden;
   overflow: hidden;

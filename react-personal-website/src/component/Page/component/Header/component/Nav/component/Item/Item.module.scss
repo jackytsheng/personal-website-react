@@ -10,7 +10,7 @@
   height:45px;
   color: white;
   border-bottom: solid 1px $theme-color-dark-blue;
-  transition-property: background-color color;
+  transition-property: background-color, color;
   transition-duration: 0.2s;
 }
 .itemFirst{
