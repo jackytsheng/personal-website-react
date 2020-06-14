@@ -2,10 +2,13 @@ import React from 'react';
 import Nav from './component/Nav';
 
 
-function Header(props) {
+function Header({
+  handleClick,
+  current
+}) {
   return (
     <div className="header__wrapper">
-      <Nav IndexChange={props.IndexChange} />
+      <Nav current={current} handleClick={handleClick} />
     </div>
   );
 }

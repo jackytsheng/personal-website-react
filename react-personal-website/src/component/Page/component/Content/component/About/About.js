@@ -3,8 +3,8 @@ import styles from './About.module.scss';
 
 const About = (props) => {
   return (
-    <div className = {styles.blank}>
-
+    <div className = {styles.wrapper}>
+ 
     </div>
   );
 };

@@ -2,58 +2,37 @@ import React from "react";
 import Item from "./component/Item";
 import styles from "./Nav.module.scss"
 
-class Nav extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      currentDir: "HOME",
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-  
-  handleClick(evt, dir) {
-    evt.preventDefault();
-    this.props.IndexChange(dir);
-    this.setState({
-      
-      currentDir: dir,
-    });
-  }
-  render() {
-    const ItemActive = true;
-    const clickFunction= this.handleClick;
-    return (
-      <nav className={styles.container}>
-        <div className={styles.topFiller}></div>
-        <Item
-          href="HOME"
-          activeState={this.state.currentDir === "HOME"}
-          onClick={clickFunction}
-        />
-        <Item
-          href="ABOUT"
-          activeState={this.state.currentDir === "ABOUT"}
-          onClick={clickFunction}
-        />
-        <Item
-          href="BLOG"
-          activeState={this.state.currentDir === "BLOG"}
-          onClick={clickFunction}
-        />
-        <Item
-          href="PROJECT"
-          activeState={this.state.currentDir === "PROJECT"}
-          onClick={clickFunction}
-        />
-        <Item
-          href="CONTACT"
-          activeState={this.state.currentDir === "CONTACT"}
-          onClick={clickFunction}
-        />
-        <div className={styles.bottomFiller}></div>
-      </nav>
-    );
-  }
-}
+const Nav = ({ current, handleClick }) => (
+  <nav className={styles.container}>
+    <div className={styles.topFiller}></div>
+    
+    <Item
+      href="HOME"
+      activeState={current === "HOME"}
+      onClick={ handleClick}
+    />
+    <Item
+      href="ABOUT"
+      activeState={current === "ABOUT"}
+      onClick={ handleClick}
+    />
+    <Item
+      href="BLOG"
+      activeState={current === "BLOG"}
+      onClick={ handleClick}
+    />
+    <Item
+      href="PROJECT"
+      activeState={current === "PROJECT"}
+      onClick={ handleClick}
+    />
+    <Item
+      href="CONTACT"
+      activeState={current === "CONTACT"}
+      onClick={ handleClick}
+    />
+    <div className={styles.bottomFiller}></div>
+  </nav>
+);
 
 export default Nav;

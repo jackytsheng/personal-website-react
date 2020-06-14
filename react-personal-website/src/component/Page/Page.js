@@ -8,36 +8,36 @@ class Page extends React.Component{
   constructor(props){
     super(props);
     this.state={
-      Index:0,
+      current:"HOME",
     };
+    this.handleClick = this.handleClick.bind(this);
   }
-  changeIndex(name){
-    const nameIndexMapper={
-      "HOME": 0,
-      "ABOUT": 1,
-      "BLOG": 2,
-      "PROJECT": 3,
-      "CONTACT": 4,
-      };
-      console.log(nameIndexMapper[name]);
+  handleClick(evt,name){
+     evt.preventDefault();
+    // const nameIndexMapper={
+    //   "HOME": 0,
+    //   "ABOUT": 1,
+    //   "BLOG": 2,
+    //   "PROJECT": 3,
+    //   "CONTACT": 4,
+    //   };
+      console.log(name);
     this.setState({
-      Index:nameIndexMapper[name],
+      current: name,
     });
   }
 
   render(){
-    const Index = this.state.Index;
-    const IndexChangeFunc = this.changeIndex.bind(this);
   return (
     <div className={styles.wrapper}>
       <div className = {styles.profile}>
         <Profile/>
       </div>
       <div className={styles.header}>
-        <Header IndexChange={IndexChangeFunc} />
+        <Header current={this.state.current} handleClick={this.handleClick} />
       </div>
       <div className={styles.content}>
-        <Content Index={Index} />
+        <Content current={this.state.current} />
       </div>
     </div>
   );

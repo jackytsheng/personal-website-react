@@ -13,16 +13,14 @@ const iconMapper={
 const Item = (
   props
 ) => {
-const ItemClick =(evt)=>{
-  props.onClick(evt,props.href);
-}
 return (
   <a
     className={`
-      ${props.href === "HOME"? styles.itemFirst:""} ${props.activeState ? `${styles.item} ${styles.active}` : styles.item}`
-    }
+      ${props.href === "HOME" ? styles.itemFirst : ""} ${
+      props.activeState ? `${styles.item} ${styles.active}` : styles.item
+    }`}
     href={props.href}
-    onClick={ItemClick}
+    onClick={(e) => props.onClick(e, props.href)}
   >
     <FontAwesomeIcon icon={iconMapper[props.href]} />
   </a>
