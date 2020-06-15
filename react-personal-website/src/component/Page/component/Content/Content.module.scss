@@ -6,17 +6,3 @@
   overflow: hidden;
   height:$content-height;
 }
-.homeEnter {
-  opacity: 0;
-}
-.homeEnterActive {
-  opacity: 1;
-  transition: opacity 0.5s;
-}
-.homeExit {
-  opacity: 1;
-}
-.homeExitActive {
-  opacity: 0;
-  transition:opacity 0.5s;
-}

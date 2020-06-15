@@ -9,6 +9,7 @@ class Page extends React.Component{
     super(props);
     this.state={
       current:"HOME",
+      previous:"HOME",
     };
     this.handleClick = this.handleClick.bind(this);
   }
@@ -23,6 +24,7 @@ class Page extends React.Component{
     //   };
       console.log(name);
     this.setState({
+      previous: this.state.current,
       current: name,
     });
   }
@@ -30,14 +32,14 @@ class Page extends React.Component{
   render(){
   return (
     <div className={styles.wrapper}>
-      <div className = {styles.profile}>
-        <Profile/>
+      <div className={styles.profile}>
+        <Profile />
       </div>
       <div className={styles.header}>
         <Header current={this.state.current} handleClick={this.handleClick} />
       </div>
       <div className={styles.content}>
-        <Content current={this.state.current} />
+        <Content previous={this.state.previous} current={this.state.current} />
       </div>
     </div>
   );

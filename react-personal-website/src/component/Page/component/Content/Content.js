@@ -3,10 +3,7 @@ import styles from "./Content.module.scss";
 import animation from './Animation.module.scss';
 import About from "./component/About";
 import Home from "./component/Home";
-import {CSSTransition} from 'react-transition-group';
-import classNames from 'classnames/bind';
-
-let cx = classNames.bind(styles);
+import {CSSTransition,TransitionGroup} from 'react-transition-group';
 
 class Content extends React.Component {
   constructor(props) {
@@ -26,37 +23,24 @@ class Content extends React.Component {
         return <About />;
     }
   }
-  wrapAnimation(name) {
-    return (  
-      <CSSTransition >
-        {this.decideComponent(name)}
-      </CSSTransition >
-      )
-  }
-
-  render() {
-
-    console.log({ ...styles });
+  animationWrapper(name){
     return (
-      <div className={styles.container}>
-        {/* {this.wrapAnimation(this.props.current)} */}
-        <CSSTransition
-          unmountOnExit
-          timeout={1000}
-          in={this.props.current === "HOME"}
-          classNames={{ ...animation }}
-        >
-          <Home />
-        </CSSTransition>
-        <CSSTransition
-          unmountOnExit
-          timeout={1}
-          in={this.props.current === "ABOUT"}
-          classNames={{ ...animation }}
-        >
-          <About />
-        </CSSTransition>
-      </div>
+      <CSSTransition 
+      unmountOnExit
+      key={name} timeout={100000} classNames={{ ...animation }}>
+        <div className={styles.container}>{this.decideComponent(name)}</div>
+      </CSSTransition>
+    );
+  }
+  render() {
+    return (
+      <CSSTransition
+        unmountOnExit
+        timeout={100000}
+        classNames={{ ...animation }}
+      >
+        <div className={styles.container}>{this.decideComponent(this.props.current)}</div>
+      </CSSTransition>
     );
   }
 }

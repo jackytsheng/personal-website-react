@@ -1,15 +1,30 @@
+@import './../../../../variable';
 
 .enter {
-  opacity: 0;
+  width: 0;
 }
 .enterActive {
-  opacity:1;
-  transition: opacity 1s;
+  width: $content-width;
+  transition: width 1s;
 }
 .exit {
-  opacity: 1;
+  width: $content-width;
 }
 .exitActive {
-  opacity: 0;
-  transition: opacity 1s;
+  width: 0;
+  transition: width 1s;
 }
+// .enter {
+//   opacity: 0;
+// }
+// .enterActive {
+//   opacity: 1;
+//   transition: opacity 1s;
+// }
+// .exit {
+//    opacity: 1;
+// }
+// .exitActive {
+//     opacity: 0;
+//   transition: opacity 1s;
+// }
