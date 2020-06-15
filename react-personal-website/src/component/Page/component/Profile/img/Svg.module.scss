@@ -15,77 +15,118 @@
       path,text{
         stroke-dashoffset: 0px ;
       }
+      .svg_1{
+        transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.1s;
+      }
+      .svg_2{
+        transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.2s;
+      }
+      .svg_3{
+        transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.3s;
+      }
+      .svg_4{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.4s;
+      }
+      .svg_5{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.5s;
+      }
+       .svg_6{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.6s;
+      }
+       .svg_7{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.7s;
+      }
+       .svg_8{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.8s;
+      }
+       .svg_9{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.85s;
+      }
+       .svg_10{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.9s;
+      }
+       .svg_11{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 1.0s;
+      }.svg_12{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 1.05s;
+      }
+      .svg_13{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 1.1s;
+      }
+      .svg_14{
+         transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 1.15s;
+      }
+
     }
     }
     
     .svg_1 {
-      transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.1s;
+     
       stroke-dasharray: 156.84963989257812px;
       stroke-dashoffset: -156.84963989257812px;
     }
     .svg_2 {
-      transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.2s;
       stroke-dasharray: 318.7862243652344px;
       stroke-dashoffset: -318.7862243652344px;
     }
     .svg_3 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.3s;
+            
       stroke-dasharray: 269.7405090332031px;
       stroke-dashoffset: -269.7405090332031px;
     }
     .svg_4 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.4s;
+           
       stroke-dasharray: 86.61581420898438px;
       stroke-dashoffset: 86.61581420898438px;
     }
 
     .svg_5 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.5s;
+
       stroke-dasharray: 83.78599548339844px;
       stroke-dashoffset: -83.78599548339844px;
     }
     .svg_6 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.6s;
+
       stroke-dasharray: 51.14128875732422px;
       stroke-dashoffset: 51.14128875732422px;
     }
     .svg_7 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.7s;
+
       stroke-dasharray: 84.6460189819336px;
       stroke-dashoffset: 84.6460189819336px;
     }
     .svg_8 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.7s;
+
       stroke-dasharray: 153.7631378173828px;
       stroke-dashoffset: -153.7631378173828px;
     }
     .svg_9 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04)0.7s;
+
       stroke-dasharray: 39.9402961730957px;
       stroke-dashoffset: 39.9402961730957px;
     }
     .svg_10 {
-            transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04)0.7s;
+
       stroke-dasharray: 204.9258270263672px;
       stroke-dashoffset: -204.9258270263672px;
     }
     .svg_11 {
-       transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.3s;
+
       stroke-dasharray: 67.7715835571289px;
       stroke-dashoffset: -67.7715835571289px;
     }
     .svg_12 {
-       transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.4s;
+
       stroke-dasharray: 387.84197998046875px;
       stroke-dashoffset: 387.84197998046875px;
     }
     .svg_13 {
-       transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.2s;
+
       stroke-dasharray: 118.09295654296875px;
       stroke-dashoffset: 118.09295654296875px;
     }
     .svg_14 {
-      transition: stroke-dashoffset $transition-time cubic-bezier(0.64, 0.51, 0.4, 1.04) 0.5s;
+
       stroke:$theme-color-ultra-white;
       stroke-width: 14;
       font-size: 235px;

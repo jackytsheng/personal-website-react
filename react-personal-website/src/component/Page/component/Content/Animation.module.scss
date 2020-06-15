@@ -5,14 +5,14 @@
 }
 .enterActive {
   width: $content-width;
-  transition: width 1s;
+  transition: width 0.5s;
 }
 .exit {
   width: $content-width;
 }
 .exitActive {
   width: 0;
-  transition: width 1s;
+  transition: width 0.5s;
 }
 // .enter {
 //   opacity: 0;
