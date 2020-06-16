@@ -42,6 +42,7 @@ class Content extends React.Component {
     );
   }
   render() {
+    console.log(this.props.current);
     return (
       <SwitchTransition>
         {this.animationWrapper(this.props.current)}

@@ -9,7 +9,6 @@ class Page extends React.Component{
     super(props);
     this.state={
       current:"HOME",
-      previous:"HOME",
     };
     this.handleClick = this.handleClick.bind(this);
   }

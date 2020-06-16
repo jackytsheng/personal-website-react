@@ -6,6 +6,7 @@ import {params} from "./components/Particle/params";
 import Loader from './components/Loader';
 import {CSSTransition} from 'react-transition-group';
 import animation from './components/Loader/animation.module.scss';
+import Footer from './../Footer';
 
 class App extends React.Component {
   constructor(props){
@@ -32,15 +33,8 @@ class App extends React.Component {
            <Loader />
         </CSSTransition>
         <div className={styles.layout}>
-          <section className="layout__page">
-            <Page />
-          </section>
-          {/* <section className="layout__page">
-        <Page/>
-      </section>
-      <section className="layout__Footer">
-        <Footer/>
-      </section> */}
+          <Page />
+          <Footer />
         </div>
         <div className={styles.particle}>
           <Particles width={"100%"} height={"100%"} params={{ ...params }} />
