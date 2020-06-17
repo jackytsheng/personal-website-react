@@ -5,7 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  height: 100vh;
   background-color: $theme-background;
 }
 .layout{
@@ -14,7 +14,6 @@
   box-shadow: 2px 6px 13px -4px rgba(46,61,102,0.85);
 }
 .particle{
-  position: absolute;
+  position: fixed;
   width:100%;
-  height:100%;
 }

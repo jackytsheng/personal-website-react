@@ -1,0 +1,48 @@
+@import "./../../../../../../variable";
+
+
+.wrapper{
+  color:$theme-color-dark-blue;
+  padding: 20px 50px;
+  width: $content-width;
+  height:518px;
+  background-color:$theme-color-ultra-white;
+  h1,h3{
+    letter-spacing: 2px;
+    margin: 0;
+  }
+  h1{
+    font-size: 2.4em;
+    font-weight: 700;
+  }
+  h2{
+    font-weight: 400;
+  }
+  h4{
+    font-size: 1em;
+    font-weight: 400;
+  }
+  p{
+    font-weight: 300;
+    font-size: 1em;
+  }
+}
+.seperator{
+  margin: 15px 0 ;
+  width: 150px;
+  border: solid 2px $theme-color-dark-blue;
+}
+.location{
+  display: flex;
+  width:200px;
+  justify-content: center;
+  align-items: center;
+  .icon{
+    margin: 5px 10px;
+  }
+  .description{
+    p{
+    font-weight: 400;
+  }
+  }
+}

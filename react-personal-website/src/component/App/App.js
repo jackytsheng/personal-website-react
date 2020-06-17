@@ -19,19 +19,19 @@ class App extends React.Component {
   }
   componentDidMount(){
     console.log("Content componentDidMount called");
-    setTimeout(() => this.setState({loading:false}),5000);
+    setTimeout(() => this.setState({loading:false}),3000);
   }
   render() {
     return (
       <div className={styles.wrapper}>
-        <CSSTransition
+        {/* <CSSTransition
           in={this.state.loading}
           unmountOnExit
           timeout={500}
           classNames={{ ...animation }}
         >
            <Loader />
-        </CSSTransition>
+        </CSSTransition> */}
         <div className={styles.layout}>
           <Page />
           <Footer />

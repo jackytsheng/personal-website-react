@@ -3,9 +3,9 @@ import styles from "./Icon.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Icon = (props) => (
-  <div className={styles.wrapper}>
+  <a className={styles.wrapper} href={props.href} target="_blank">
     <FontAwesomeIcon icon={props.icon} />
-  </div>
+  </a>
 );
 ;
 

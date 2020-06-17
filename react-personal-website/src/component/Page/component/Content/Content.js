@@ -4,6 +4,7 @@ import animation from './Animation.module.scss';
 import About from "./component/About";
 import Home from "./component/Home";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
+import Contact from "./component/Contact";
 
 class Content extends React.Component {
   constructor(props) {
@@ -25,8 +26,8 @@ class Content extends React.Component {
         return <About />;
       case "HOME":
         return <About />;
-      case "HOME":
-        return <About />;
+      case "CONTACT":
+        return <Contact />;
     }
   }
   animationWrapper(name) {
