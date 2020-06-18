@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "./Contact.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import {faMapMarkerAlt,faMobileAlt,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 
 const Contact = (props) => {
   return (
@@ -24,18 +24,18 @@ const Contact = (props) => {
       </div>
       <div className={styles.location}>
         <div className={styles.icon}>
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
+          <FontAwesomeIcon icon={faMobileAlt} />
         </div>
         <div className={styles.description}>
-          <p>Melbourne, Australia</p>
+          <p>+61 469 145 580</p>
         </div>
       </div>
       <div className={styles.location}>
         <div className={styles.icon}>
-          <FontAwesomeIcon icon={faMapMarkerAlt} />
+          <FontAwesomeIcon icon={faEnvelope} />
         </div>
         <div className={styles.description}>
-          <p>Melbourne, Australia</p>
+          <p>j.zheng822@gmail.com</p>
         </div>
       </div>
       <div className={styles.location}>
