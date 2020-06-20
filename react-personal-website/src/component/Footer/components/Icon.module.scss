@@ -8,9 +8,8 @@
   font-size: 1.5em;
   color: $theme-color-ultra-white;
   text-decoration: none;
-  border: solid 1px $theme-color-dark-blue;
+  border-right: solid 1px $theme-color-dark-blue;
   padding:3px 5px;
-  margin: 0 5px;
   width:50px;
   transition-property: background-color,color;
   transition-duration: 0.3s;
