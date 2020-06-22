@@ -1,32 +1,28 @@
 @import "./../../../../../../variable";
 
+
 .wrapper{
+  position: relative;
   color:$theme-color-dark-blue;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 50px;
-  width:$content-width;
+  padding: 20px 50px;
+  width: $content-width;
   height:518px;
   background-color:$theme-color-ultra-white;
-  text-align: center;
-  h1,h2,h3,h4{
+  h1,h3{
     letter-spacing: 2px;
     margin: 0;
   }
   h1{
-    margin: 10px;
     font-size: 2.4em;
-     font-weight: 700;
+    font-weight: 700;
   }
   h2{
-    margin-top: 80px;
     font-weight: 400;
+    margin:0;
   }
   h4{
     font-size: 1em;
-    font-weight: 500;
+    font-weight: 400;
   }
   p{
     font-weight: 300;
@@ -34,7 +30,59 @@
   }
 }
 .seperator{
-  margin: 15px;
-  width: 35px;
+  margin: 15px 0 ;
+  width: 150px;
   border: solid 2px $theme-color-dark-blue;
+}
+.detailItem{
+  display: flex;
+  width:300px;
+  align-items: center;
+  .icon{
+    display: flex;
+    justify-content: center;
+    width:50px;
+  }
+  .description{
+    p{
+    font-weight: 400;
+  }
+  }
+}
+.skill{
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 0;
+}
+.emphasis{
+  font-weight: 600;
+}
+.detail{
+  display: flex;
+  flex-wrap: wrap;
+}
+.resume{
+  position: absolute;
+  bottom:5px;
+  right:5px;
+  padding:10px;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  .download{
+    transition-property: color,border-bottom;
+  transition-duration: 0.2s;
+    font-size: 1.5em;
+    border-bottom: solid 3px $theme-color-blue;
+    text-decoration: none;
+    color:$theme-color-blue;
+   
+  }
+   &:hover{
+      background-color: $theme-color-blue;
+      .download{
+        border-bottom: solid 3px $theme-color-ultra-white;
+        color:$theme-color-ultra-white;  
+      
+  }
+    }
 }

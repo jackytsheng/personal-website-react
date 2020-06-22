@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from "./Contact.module.scss";
+import styles from "./Blog.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faMapMarkerAlt,faMobileAlt,faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { faWeixin } from "@fortawesome/free-brands-svg-icons";
 
-const Contact = (props) => {
+const Blog = (props) => {
   return (
     <div className={styles.wrapper}>
       <h1>JUST SAY HELLO </h1>
@@ -53,4 +53,4 @@ const Contact = (props) => {
   );
 };
 
-export default Contact;
+export default Blog;

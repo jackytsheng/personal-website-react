@@ -7,14 +7,17 @@
   bottom: 0;
   display: flex;
   left: 45px;
-  right:45px;
-  justify-content: space-between;
+  right:44px;
   border-right: none;
+}
+.filler{
+  flex:1;
+  border-right:solid 1px $theme-color-dark-blue;
 }
 .copyright{
   position: relative;
-  bottom:-5px;
-  font-size: 0.8em;
+  bottom:-15px;
+  font-size: 0.7em;
   color:$theme-color-ultra-white;
 }
 .iconWrapper{

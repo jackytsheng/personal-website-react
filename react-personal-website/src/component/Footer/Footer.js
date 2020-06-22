@@ -7,12 +7,15 @@ import {
   faGithubSquare,
 } from '@fortawesome/free-brands-svg-icons';
 
+
 const Footer = () => (
   <div className={styles.wrapper}>
     <div className={styles.copyrightWrapper}>
       <p className={styles.copyright}>
         Copyright &copy; 2020 Jiajin Zheng. All rights reserved.
       </p>
+    </div>
+    <div className={styles.filler}>
     </div>
     <div className={styles.iconWrapper}>
       <Icon icon={faTwitterSquare} href="https://twitter.com/Jiajin_Zheng" />
