@@ -58,7 +58,7 @@ export const params = {
                enable: true,
                area: 400,
              },
-             limit: 150,
+             limit: 80,
              value: 10,
            },
            opacity:{
