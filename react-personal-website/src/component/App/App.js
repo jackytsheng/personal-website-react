@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./App.module.scss";
 import Page from "../Page";
-import Particles from "react-particles-js";
+import Particles from "react-tsparticles"; 
 import {params} from "./components/Particle/params";
 import Loader from './components/Loader';
 import {CSSTransition} from 'react-transition-group';
@@ -30,15 +30,13 @@ class App extends React.Component {
           timeout={500}
           classNames={{ ...animation }}
         >
-           <Loader />
+          <Loader />
         </CSSTransition>
         <div className={styles.layout}>
           <Page />
           <Footer />
         </div>
-        <div className={styles.particle}>
-          <Particles width={"100%"} height={"100%"} params={{ ...params }} />
-        </div>
+          <Particles className={styles.particle}  params={{ ...params }} />
       </div>
     );
   }
