@@ -11,6 +11,7 @@ import Project from "./component/Project";
 class Content extends React.Component {
   constructor(props) {
     super(props);
+    console.log("constructor called");
   }
   componentDidMount() {
     console.log("Content componentDidMount called");

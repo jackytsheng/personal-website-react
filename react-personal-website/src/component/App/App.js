@@ -11,27 +11,26 @@ import Footer from './../Footer';
 class App extends React.Component {
   constructor(props){
     super(props);
-
     this.state = {
       loading:true,
     }
 
   }
   componentDidMount(){
-    console.log("Content componentDidMount called");
+    console.log(this);
     setTimeout(() => this.setState({loading:false}),3000);
   }
   render() {
     return (
       <div className={styles.wrapper}>
-        <CSSTransition
+        {/* <CSSTransition
           in={this.state.loading}
           unmountOnExit
           timeout={500}
           classNames={{ ...animation }}
         >
           <Loader />
-        </CSSTransition>
+        </CSSTransition> */}
         <div className={styles.layout}>
           <Page />
           <Footer />
