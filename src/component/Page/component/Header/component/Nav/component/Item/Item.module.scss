@@ -1,0 +1,27 @@
+@import "./../../../../../../../../index.scss";
+
+.item{
+  text-decoration: none;
+  background-color: $theme-color-blue;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height:45px;
+  color: $theme-color-ultra-white;
+  border-bottom: solid 1px $theme-color-dark-blue;
+  transition-property: background-color, color;
+  transition-duration: 0.2s;
+}
+.itemFirst{
+  border-top: solid 1px $theme-color-dark-blue;
+}
+.item:hover{
+  color: $theme-color-blue;
+  background-color: $theme-color-ultra-white;
+}
+
+.active{
+  background: $theme-color-ultra-white;
+  color: $theme-color-blue;
+}

@@ -1,0 +1,15 @@
+@import "./../../../../../../variable";
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:$content-height;
+  .topFiller{
+    flex:2;
+  }
+  .bottomFiller{
+    flex:1;
+  }
+}
+
+

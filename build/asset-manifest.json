@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "./static/css/main.090fca84.chunk.css",
+    "main.js": "./static/js/main.40ffd582.chunk.js",
+    "main.js.map": "./static/js/main.40ffd582.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.f75dacb2.js",
+    "runtime-main.js.map": "./static/js/runtime-main.f75dacb2.js.map",
+    "static/js/2.8e932b45.chunk.js": "./static/js/2.8e932b45.chunk.js",
+    "static/js/2.8e932b45.chunk.js.map": "./static/js/2.8e932b45.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.1b313c00621af5188188357d121af55e.js": "./precache-manifest.1b313c00621af5188188357d121af55e.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.090fca84.chunk.css.map": "./static/css/main.090fca84.chunk.css.map",
+    "static/js/2.8e932b45.chunk.js.LICENSE.txt": "./static/js/2.8e932b45.chunk.js.LICENSE.txt",
+    "static/media/Jiajin_Zheng_Resume.pdf": "./static/media/Jiajin_Zheng_Resume.914f1e20.pdf",
+    "static/media/profile.PNG": "./static/media/profile.b69531b5.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f75dacb2.js",
+    "static/js/2.8e932b45.chunk.js",
+    "static/css/main.090fca84.chunk.css",
+    "static/js/main.40ffd582.chunk.js"
+  ]
+}
