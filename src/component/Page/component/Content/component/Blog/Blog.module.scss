@@ -32,22 +32,48 @@
   width: 150px;
   border: solid 2px $theme-color-dark-blue;
 }
-.detailItem{
-  display: flex;
-  width:300px;
-  align-items: center;
-  .icon{
-    display: flex;
-    justify-content: center;
-    width:50px;
+
+.card{
+  cursor: pointer;
+  position: relative;
+  width:200px;
+  height:200px;
+
+  &:hover{
+    .front{
+    transform: perspective(600px) rotateY(-180deg);
   }
-  .description{
-    p{
-    font-weight: 400;
-  }
+  .back{
+  transform: perspective(600px) rotateY(0deg);
+}
   }
 }
-.detail{
+.cardContainer{
+
+  width: 100%;
   display: flex;
-  flex-direction: column;
+}
+.front,.back{
+    border: solid 2px $theme-color-dark-blue;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: transform .6s linear;
+}
+.front img{
+  height: 100%;
+}
+.front{
+  transform: perspective(600px) rotateY(0deg);
+}
+.back{
+  background: #f1f1f1;
+  transform: perspective(600px) rotateY(180deg);
+}
+.backContent{
+  color: #2c3e50;
+  text-align: center;
+  width: 100%;
 }
