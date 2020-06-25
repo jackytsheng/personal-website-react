@@ -7,6 +7,7 @@ import { CSSTransition, SwitchTransition } from "react-transition-group";
 import Contact from "./component/Contact";
 import Blog from './component/Blog';
 import Project from "./component/Project";
+import Profile from './../Profile';
 
 class Content extends React.Component {
   constructor(props) {
@@ -21,6 +22,8 @@ class Content extends React.Component {
   }
   decideComponent(name) {
     switch (name) {
+      case "PROFILE":
+        return <Profile/>;
       case "HOME":
         return <Home />;
       case "ABOUT":

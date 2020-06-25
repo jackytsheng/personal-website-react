@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Item.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUser,faBriefcase,faBook,faAddressCard,faHome} from '@fortawesome/free-solid-svg-icons'
+import {faUser,faBriefcase,faBook,faAddressCard,faHome,faUserCircle} from '@fortawesome/free-solid-svg-icons'
 
 const iconMapper={
 "HOME": faHome,
@@ -9,6 +9,7 @@ const iconMapper={
 "BLOG": faBook,
 "PROJECT": faBriefcase,
 "CONTACT": faAddressCard,
+"PROFILE":faUserCircle,
 }
 const Item = (
   props
@@ -16,6 +17,7 @@ const Item = (
 return (
   <a
     className={`
+    ${props.href === "PROFILE" ? styles.profile : ""}
       ${props.href === "HOME" ? styles.itemFirst : ""} ${
       props.activeState ? `${styles.item} ${styles.active}` : styles.item
     }`}

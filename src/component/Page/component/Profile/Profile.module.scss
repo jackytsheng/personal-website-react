@@ -5,19 +5,6 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  &:hover {
-    .container {
-      top: $content-height - $picture-height;
-    }
-    .name{
-      top:0;
-    }
-    .description{
-      visibility: visible;
-      top:$content-height - $picture-height;
-      bottom:0;
-    }
-  }
 }
 
 .container {
@@ -48,7 +35,7 @@
   transition-property: top bottom;
   transition-duration: $transition-time;
   width: 100%;
-  top: $picture-height;
+
   position: absolute;
   height: $content-height - $picture-height;
   background-color: $theme-color-dark-blue;
@@ -60,4 +47,58 @@
     margin: 0;
     color: white;
   }
+}
+
+
+@media only screen and (min-width: 1300px) {
+  .wrapper {
+
+  &:hover {
+    .container {
+      top: $content-height - $picture-height;
+    }
+    .name{
+      top:0;
+    }
+    .description{
+      visibility: visible;
+      top:$content-height - $picture-height;
+      bottom:0;
+    }
+  }
+}
+.name{
+    top: $picture-height;
+}
+}
+
+@media only screen and (max-width: 1300px) {
+.wrapper {
+  width:$content-width;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $theme-color-ultra-white;
+  .container{
+    width:300px ;
+    position: relative;
+    height:330px+  $content-height - $picture-height;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    .picture{
+      width:300px;
+    }
+    
+  }
+  .name{
+    position: relative;
+    top:-$content-height + $picture-height;
+    width:300px;
+  }
+}
+}
+
+@media only screen and (max-width: 860px){
+ .wrapper{
+   width:100%;
+}
 }

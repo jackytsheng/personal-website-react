@@ -7,7 +7,7 @@ import { faWeixin } from "@fortawesome/free-brands-svg-icons";
 const Project = (props) => {
   return (
     <div className={styles.wrapper}>
-      <h1>Oops ! Looks like i am working hard on this page...</h1>
+      <h1>Oops ! Looks like I am working hard on this page...</h1>
       <div className={styles.seperator}></div>
       <h2>Come back later and visit this page again. </h2>
     </div>

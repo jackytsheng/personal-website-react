@@ -10,3 +10,13 @@
 .content,.profile {
   flex: 1;
 }
+@media only screen and (max-width: 1300px){
+  .wrapper{
+     padding-left: 0;
+  }
+  .profile{
+    display: none;
+  }
+}
+
+

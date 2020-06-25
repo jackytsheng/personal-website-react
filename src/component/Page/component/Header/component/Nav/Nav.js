@@ -5,31 +5,27 @@ import styles from "./Nav.module.scss"
 const Nav = ({ current, handleClick }) => (
   <nav className={styles.container}>
     <div className={styles.topFiller}></div>
-    
     <Item
-      href="HOME"
-      activeState={current === "HOME"}
-      onClick={ handleClick}
+      href="PROFILE"
+      activeState={current === "PROFILE"}
+      onClick={handleClick}
     />
+    <Item href="HOME" activeState={current === "HOME"} onClick={handleClick} />
     <Item
       href="ABOUT"
       activeState={current === "ABOUT"}
-      onClick={ handleClick}
+      onClick={handleClick}
     />
-    <Item
-      href="BLOG"
-      activeState={current === "BLOG"}
-      onClick={ handleClick}
-    />
+    <Item href="BLOG" activeState={current === "BLOG"} onClick={handleClick} />
     <Item
       href="PROJECT"
       activeState={current === "PROJECT"}
-      onClick={ handleClick}
+      onClick={handleClick}
     />
     <Item
       href="CONTACT"
       activeState={current === "CONTACT"}
-      onClick={ handleClick}
+      onClick={handleClick}
     />
     <div className={styles.bottomFiller}></div>
   </nav>

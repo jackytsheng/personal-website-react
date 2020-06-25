@@ -8,10 +8,12 @@
   align-items: center;
   width: 50px;
   height:45px;
+  font-size: 1.2em;
   color: $theme-color-ultra-white;
   border-bottom: solid 1px $theme-color-dark-blue;
   transition-property: background-color, color;
   transition-duration: 0.2s;
+ 
 }
 .itemFirst{
   border-top: solid 1px $theme-color-dark-blue;
@@ -24,4 +26,20 @@
 .active{
   background: $theme-color-ultra-white;
   color: $theme-color-blue;
+}
+
+@media only screen and (max-width: 1300px){
+  .itemFirst{
+  border-top: 0;
+} .item{
+  border: 0;
+}
+
+}
+
+@media only screen and (min-width: 1300px){
+   .profile{
+  display: none;
+  }
+
 }
