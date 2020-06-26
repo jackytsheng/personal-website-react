@@ -7,7 +7,7 @@ function Header({
   current
 }) {
   return (
-    <div className="header__wrapper">
+    <div>
       <Nav current={current} handleClick={handleClick} />
     </div>
   );
