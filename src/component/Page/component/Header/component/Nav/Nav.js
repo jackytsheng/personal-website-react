@@ -16,12 +16,12 @@ const Nav = ({ current, handleClick }) => (
       activeState={current === "ABOUT"}
       onClick={handleClick}
     />
-    <Item href="BLOG" activeState={current === "BLOG"} onClick={handleClick} />
+    {/* <Item href="BLOG" activeState={current === "BLOG"} onClick={handleClick} />
     <Item
       href="PROJECT"
       activeState={current === "PROJECT"}
       onClick={handleClick}
-    />
+    /> */}
     <Item
       href="CONTACT"
       activeState={current === "CONTACT"}

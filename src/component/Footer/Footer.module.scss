@@ -3,12 +3,12 @@
 
 .wrapper{
   position: absolute;
-  top: 45px + $content-height;
   bottom: 0;
   display: flex;
   left: 45px;
   right:44px;
   border-right: none;
+  height:45px;
 }
 .filler{
   flex:1;
@@ -23,3 +23,27 @@
 .iconWrapper{
   display: flex;
 }
+@media only screen and (max-width: 520px){
+  .layout{
+   width:100%;
+   height:100vh;
+  }
+  .wrapper{
+  bottom: 0;
+  height:45px;
+  left:0;
+  right:0;  
+} 
+ .filler{
+    border: none;
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width:520px) {
+  .filler{
+    border: none;
+  }
+  .wrapper{
+    right: 45px;
+  }
+}
+

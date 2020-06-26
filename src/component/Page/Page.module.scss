@@ -19,4 +19,16 @@
   }
 }
 
+@media only screen and (max-width: 520px){
+  .wrapper{
+     flex-direction: column;
+     padding: 0 0 45px;
+       height:100%;
+    
+  }
+  .content{
+    height:100%;
+  }
+}
+
 

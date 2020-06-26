@@ -99,6 +99,12 @@
 
 @media only screen and (max-width: 860px){
  .wrapper{
-   width:100%;
+     width:100%;
 }
+}
+
+@media only screen and (max-width: 520px){
+  .wrapper{
+     height:100%;
+  }
 }

@@ -4,6 +4,7 @@
 .wrapper{
   color:$theme-color-dark-blue;
   padding: 20px 50px;
+  width: $content-width;
   height:518px;
   background-color:$theme-color-ultra-white;
   h1,h3{
@@ -49,4 +50,15 @@
 .detail{
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 860px){
+ .wrapper{
+     width:100%;
+}
+}
+
+@media only screen and (max-width: 520px){
+  .wrapper{
+     height:100%;
+  }
 }

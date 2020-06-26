@@ -18,3 +18,8 @@
     background-color: $theme-color-ultra-white;
   }
 }
+@media only screen and (max-width: 1300px) {
+  .wrapper{
+    border: none;
+  }
+}

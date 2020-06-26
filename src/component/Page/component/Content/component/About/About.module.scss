@@ -4,6 +4,7 @@
   color:$theme-color-dark-blue;
   padding: 20px 50px;
   height:518px;
+  width: $content-width;
   background-color:$theme-color-ultra-white;
   h1,h3{
     letter-spacing: 2px;
@@ -143,5 +144,15 @@
   }
   40%{
     opacity: 1;
+  }
+}
+@media only screen and (max-width: 860px){
+ .wrapper{
+     width:100%;
+}
+}
+@media only screen and (max-width: 520px){
+  .wrapper{
+     height:100%;
   }
 }
