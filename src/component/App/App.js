@@ -23,14 +23,14 @@ class App extends React.Component {
   render() {
     return (
       <div className={styles.wrapper}>
-        {/* <CSSTransition
+        <CSSTransition
           in={this.state.loading}
           unmountOnExit
-          timeout={500}
+          timeout={5000}
           classNames={{ ...animation }}
         >
           <Loader />
-        </CSSTransition> */}
+        </CSSTransition>
         <div className={styles.layout}>
           <Page />
           <Footer />
