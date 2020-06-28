@@ -1,5 +1,5 @@
 ## This is my personal website
-[Visit here](jiajinzheng.com)
+[Visit here](https://jiajinzheng.com/)
 
 Created Using React framework.
 
