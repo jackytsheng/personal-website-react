@@ -1,0 +1,10 @@
+@import './../../../../../../variable';
+
+
+.enter {
+  opacity: 0;
+}
+.enterActive {
+  opacity:1;
+  transition: opacity 1s;
+}

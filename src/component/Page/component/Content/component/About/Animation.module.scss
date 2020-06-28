@@ -1,0 +1,17 @@
+@import './../../../../../../variable';
+
+
+.enter {
+   max-height: 0px;
+}
+.enterActive {
+  max-height: 120px;
+  transition: max-height 0.5s;
+}
+.exit {
+  max-height: 120px;
+}
+.exitActive {
+  max-height: 0px;
+  transition: max-height 0.5s;
+}

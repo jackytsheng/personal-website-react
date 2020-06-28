@@ -12,13 +12,7 @@ import Profile from './../Profile';
 class Content extends React.Component {
   constructor(props) {
     super(props);
-    console.log("constructor called");
-  }
-  componentDidMount() {
-    console.log("Content componentDidMount called");
-  }
-  componentDidUpdate() {
-    console.log("Content componentDidUpdate called");
+    this.state={};
   }
   decideComponent(name) {
     switch (name) {
@@ -51,7 +45,6 @@ class Content extends React.Component {
     );
   }
   render() {
-    console.log(this.props.current);
     return (
       <SwitchTransition>
         {this.animationWrapper(this.props.current)}

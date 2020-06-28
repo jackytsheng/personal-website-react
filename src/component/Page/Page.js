@@ -21,7 +21,6 @@ class Page extends React.Component{
     //   "PROJECT": 3,
     //   "CONTACT": 4,
     //   };
-      console.log(name);
     this.setState({
       previous: this.state.current,
       current: name,

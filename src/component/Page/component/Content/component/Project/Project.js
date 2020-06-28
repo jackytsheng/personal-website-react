@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./Project.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMapMarkerAlt,faMobileAlt,faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import { faWeixin } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {faMapMarkerAlt,faMobileAlt,faEnvelope} from "@fortawesome/free-solid-svg-icons";
+// import { faWeixin } from "@fortawesome/free-brands-svg-icons";
 
 const Project = (props) => {
   return (

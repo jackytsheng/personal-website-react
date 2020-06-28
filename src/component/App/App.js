@@ -17,8 +17,7 @@ class App extends React.Component {
 
   }
   componentDidMount(){
-    console.log(this);
-    setTimeout(() => this.setState({loading:false}),3000);
+    setTimeout(() => this.setState({loading:false}),5000);
   }
   render() {
     return (
@@ -26,7 +25,7 @@ class App extends React.Component {
         <CSSTransition
           in={this.state.loading}
           unmountOnExit
-          timeout={5000}
+          timeout={500}
           classNames={{ ...animation }}
         >
           <Loader />

@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from "./Blog.module.scss";
-import BlogCard from './BlogCard';
+// import BlogCard from './BlogCard';
 
 class Blog extends React.Component {
 
   constructor(props){
     super(props);
+    this.state={};
   }
   componentDidMount(){
   }
