@@ -31,7 +31,7 @@ class Page extends React.Component{
   return (
     <div className={styles.wrapper}>
       <div className={styles.profile}>
-        <Profile />
+        <Profile handleImageLoaded={this.props.handleImageLoaded} />
       </div>
       <div className={styles.header}>
         <Header current={this.state.current} handleClick={this.handleClick} />

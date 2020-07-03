@@ -7,6 +7,7 @@ const Profile = (props) => {
     <div className={styles.wrapper}>
       <figure className={styles.container}>
         <img
+          onLoad={props.handleImageLoaded}
           className={styles.picture}
           src={require("./img/profile.PNG")}
           alt="this is my profile"

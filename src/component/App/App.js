@@ -9,15 +9,16 @@ import animation from './components/Loader/animation.module.scss';
 import Footer from './../Footer';
 
 class App extends React.Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      loading:true,
-    }
+      loading: true,
+    };
 
+    this.handleImageLoaded = this.handleImageLoaded.bind(this);
   }
-  componentDidMount(){
-    setTimeout(() => this.setState({loading:false}),5000);
+  handleImageLoaded(){
+    setTimeout(() => this.setState({ loading: false }), 1000);
   }
   render() {
     return (
@@ -31,10 +32,10 @@ class App extends React.Component {
           <Loader />
         </CSSTransition>
         <div className={styles.layout}>
-          <Page />
+          <Page handleImageLoaded={this.handleImageLoaded} />
           <Footer />
         </div>
-          <Particles className={styles.particle}  params={{ ...params }} />
+        <Particles className={styles.particle} params={{ ...params }} />
       </div>
     );
   }
