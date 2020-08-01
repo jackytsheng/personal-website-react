@@ -6,7 +6,7 @@ Created Using React framework.
 
 ### Home page
 
-![Home page](README_img/home.png);
+![Home page](README_img/home.png
 
 ### Features:
 - Responsive
