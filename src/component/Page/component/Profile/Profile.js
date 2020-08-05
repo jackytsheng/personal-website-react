@@ -9,7 +9,7 @@ const Profile = (props) => {
         <img
           onLoad={props.handleImageLoaded}
           className={styles.picture}
-          src={require("./img/profile.PNG")}
+          src="https://github.com/jackytsheng/personal-website-react/blob/master/Profile_Picture/profile.PNG?raw=true"
           alt="this is my profile"
         ></img>
       </figure>
