@@ -83,7 +83,7 @@ class About extends React.Component {
           </CSSTransition>
         </div>
         <div className={styles.resume}>
-          <a className={styles.download} href={Pdf}>
+          <a className={styles.download} href={Pdf} target="__blank">
             My Resume
           </a>
         </div>
