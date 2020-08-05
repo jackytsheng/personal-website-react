@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "743847e4b5cc4390b109f6b98493e584",
+    "revision": "cb3c653d2da1b24dd44ee42b254af988",
     "url": "./index.html"
   },
   {
-    "revision": "58c314a25af7ed7cd3b2",
+    "revision": "024b2004db06d3b167a8",
     "url": "./static/css/main.2827580a.chunk.css"
   },
   {
@@ -16,15 +16,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/js/2.9780ac4d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58c314a25af7ed7cd3b2",
-    "url": "./static/js/main.95ae8b01.chunk.js"
+    "revision": "024b2004db06d3b167a8",
+    "url": "./static/js/main.2f2f3233.chunk.js"
   },
   {
     "revision": "78bb571d502ce259c6f8",
     "url": "./static/js/runtime-main.f75dacb2.js"
   },
   {
-    "revision": "443024e3c88d2564cbefdaa1a32292f3",
-    "url": "./static/media/Jiajin_Zheng_Resume.443024e3.pdf"
+    "revision": "07f8d446a810d15019a09ffe04125001",
+    "url": "./static/media/Jiajin_Zheng_Resume.07f8d446.pdf"
   }
 ]);
