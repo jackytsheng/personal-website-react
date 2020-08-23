@@ -28,19 +28,19 @@ class Page extends React.Component{
   }
 
   render(){
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.profile}>
-        <Profile handleImageLoaded={this.props.handleImageLoaded} />
+    return (
+      <div className={styles.wrapper}>
+        <div className={styles.profile}>
+          <Profile handleImageLoaded={this.props.handleImageLoaded} />
+        </div>
+        <div className={styles.header}>
+          <Header current={this.state.current} handleClick={this.handleClick} />
+        </div>
+        <div className={styles.content}>
+          <Content previous={this.state.previous} current={this.state.current} />
+        </div>
       </div>
-      <div className={styles.header}>
-        <Header current={this.state.current} handleClick={this.handleClick} />
-      </div>
-      <div className={styles.content}>
-        <Content previous={this.state.previous} current={this.state.current} />
-      </div>
-    </div>
-  );
+    );
 }
 }
 

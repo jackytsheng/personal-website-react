@@ -16,17 +16,13 @@ const Nav = ({ current, handleClick }) => (
       activeState={current === "ABOUT"}
       onClick={handleClick}
     />
-    {/* <Item href="BLOG" activeState={current === "BLOG"} onClick={handleClick} />
-    <Item
-      href="PROJECT"
-      activeState={current === "PROJECT"}
-      onClick={handleClick}
-    /> */}
     <Item
       href="CONTACT"
       activeState={current === "CONTACT"}
       onClick={handleClick}
     />
+    <Item href="https://blog.jiajinzheng.com" onClick={(e, url) => {}} />
+    <Item href="https://gaget.jiajinzheng.com" onClick={(e, url) => {}} />
     <div className={styles.bottomFiller}></div>
   </nav>
 );

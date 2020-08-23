@@ -111,7 +111,6 @@
     border-bottom: solid 3px $theme-color-blue;
     text-decoration: none;
     color:$theme-color-blue;
-   
   }
    &:hover{
       background-color: $theme-color-blue;
@@ -202,8 +201,17 @@
      height:100%;
   }
 }
+@media only screen and (max-width: 770px){
+.resume{
+  .download{
+    font-size: 1em;
+  }
+}
+}
+
+
 @media only screen and (min-width: 520px) and (max-width: 620px){
   .UnderlineSeperator{
   margin: 5px 0 ;
-}
+ }
 }

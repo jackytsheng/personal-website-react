@@ -94,5 +94,32 @@ export default ({ onClick, current }) => (
         </div>
       </div>
     </CSSTransition>
+    <div className={styles.title} onClick={() => onClick("Cloud")}>
+      <h2>AWS Cloud</h2>
+      <div
+        className={`${styles.icon} ${
+          current === "Cloud" ? styles.iconActive : null
+        }`}
+      >
+        <FontAwesomeIcon icon={faChevronUp} />
+      </div>
+    </div>
+    <CSSTransition
+      timeout={300}
+      unmountOnExit
+      in={current === "Cloud"}
+      classNames={{ ...animation }}
+    >
+      <div className={styles.dropdown}>
+        <div className={styles.detail}>
+          <Skill name={"S3"} />
+          <Skill name={"Route 53"} />
+          <Skill name={"EC2"} />
+          <Skill name={"CloudFront"} />
+          <Skill name={"Lambda"} />
+          <Skill name={"API Gateway"} />
+        </div>
+      </div>
+    </CSSTransition>
   </div>
 );
