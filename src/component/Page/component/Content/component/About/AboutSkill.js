@@ -89,7 +89,7 @@ export default ({ onClick, current }) => (
           <Skill name={"Scrum"} />
           <Skill name={"TDD"} />
           <Skill name={"BDD"} />
-          <Skill name={"git"} />
+          <Skill name={"Git"} />
           <Skill name={"Github"} />
         </div>
       </div>

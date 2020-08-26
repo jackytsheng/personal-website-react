@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Item.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faUser,faBriefcase,faBook,faAddressCard,faHome,faUserCircle} from '@fortawesome/free-solid-svg-icons'
+import {faUser,faBook,faAddressCard,faHome,faUserCircle,faGamepad} from '@fortawesome/free-solid-svg-icons'
 
 const iconMapper = {
   HOME: faHome,
   ABOUT: faUser,
   "https://blog.jiajinzheng.com": faBook,
-  "https://gaget.jiajinzheng.com": faBriefcase,
+  "https://gaget.jiajinzheng.com": faGamepad,
   CONTACT: faAddressCard,
   PROFILE: faUserCircle,
 };
