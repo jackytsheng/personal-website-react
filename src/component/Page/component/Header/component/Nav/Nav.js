@@ -21,8 +21,13 @@ const Nav = ({ current, handleClick }) => (
       activeState={current === "CONTACT"}
       onClick={handleClick}
     />
+    <Item
+      href="https://www.youtube.com/channel/UCvNmoHGEeNvE442gZv8qm9w"
+      onClick={(e, url) => {}}
+    />
     <Item href="https://blog.jiajinzheng.com" onClick={(e, url) => {}} />
     <Item href="https://gaget.jiajinzheng.com" onClick={(e, url) => {}} />
+
     <div className={styles.bottomFiller}></div>
   </nav>
 );

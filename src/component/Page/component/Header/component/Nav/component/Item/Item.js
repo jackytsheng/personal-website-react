@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Item.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faUser,faBook,faAddressCard,faHome,faUserCircle,faGamepad} from '@fortawesome/free-solid-svg-icons'
+import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 
 const iconMapper = {
   HOME: faHome,
@@ -10,6 +11,7 @@ const iconMapper = {
   "https://gaget.jiajinzheng.com": faGamepad,
   CONTACT: faAddressCard,
   PROFILE: faUserCircle,
+  "https://www.youtube.com/channel/UCvNmoHGEeNvE442gZv8qm9w": faYoutube,
 };
 const Item = (
   props
