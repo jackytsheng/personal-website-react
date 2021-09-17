@@ -2,18 +2,18 @@ import React from 'react';
 import styles from './About.module.scss';
 import AboutSkill from './AboutSkill';
 import Pdf from './components/Jiajin_Zheng_Resume.pdf';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faLaptop} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLaptop } from '@fortawesome/free-solid-svg-icons';
 import animationLaptop from './AnimationLaptop.module.scss';
-import animationDisplay from "./AnimationDisplay.module.scss";
-import { CSSTransition } from "react-transition-group";
+import animationDisplay from './AnimationDisplay.module.scss';
+import { CSSTransition } from 'react-transition-group';
 
 class About extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       show: false,
-      current: "",
+      current: '',
     };
     this.toggleDropDown = this.toggleDropDown.bind(this);
   }
@@ -23,9 +23,10 @@ class About extends React.Component {
     });
   };
   toggleDropDown(name) {
+    console.log(name);
     if (name === this.state.current) {
       this.setState({
-        current: "",
+        current: '',
       });
     } else if (name !== this.state.current) {
       this.setState({
@@ -38,13 +39,12 @@ class About extends React.Component {
       <div className={styles.wrapper}>
         <h1>ABOUT ME</h1>
         <div className={styles.seperator}></div>
-        <h2> A passionate programmer who is always learning.</h2>
-
+        <h2>A Passionate Aoftware Apprentice</h2>
         <h4 className={styles.description}>
           I <span className={styles.emphasis}>Continuously Integrates</span> new
-          knowledge and insight, and{" "}
-          <span className={styles.emphasis}>Continuously Deploy</span> quality
-          solution to customers.
+          knowledge and insight, and{' '}
+          <span className={styles.emphasis}>Continuously Delivery</span> quality
+          solution
         </h4>
         <h2 className={styles.skill}>MY SKILLS</h2>
         <div className={styles.UnderlineSeperator}></div>
@@ -82,14 +82,16 @@ class About extends React.Component {
             />
           </CSSTransition>
         </div>
+        {/* Come back and uncomment this when I need to include the Resume again */}
+        {/* 
         <div className={styles.resume}>
           <a className={styles.download} href={Pdf} target="__blank">
             My Resume
           </a>
-        </div>
+        </div> */}
       </div>
     );
   }
-};
+}
 
 export default About;
