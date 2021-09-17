@@ -1,18 +1,22 @@
 import React from 'react';
-import styles from "./Contact.module.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faMapMarkerAlt,faMobileAlt,faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import { faWeixin } from "@fortawesome/free-brands-svg-icons";
+import styles from './Contact.module.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faMapMarkerAlt,
+  faMobileAlt,
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons';
+import { faWeixin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = (props) => {
   return (
     <div className={styles.wrapper}>
       <h1>JUST SAY HELLO </h1>
       <div className={styles.seperator}></div>
-      <h2>Feel free to get in touch with me.</h2>
+      <h2>Feel free to get in touch with me</h2>
       <h4 className={styles.description}>
         I am always open to discussing new projects, creative ideas and
-        opportunites.
+        opportunities
       </h4>
 
       <div className={styles.detail}>
