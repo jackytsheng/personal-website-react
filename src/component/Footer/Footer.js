@@ -16,12 +16,21 @@ const Footer = () => (
     </div>
     <div className={styles.filler}></div>
     <div className={styles.iconWrapper}>
-      <Icon icon={faTwitterSquare} href='https://twitter.com/Jiajin_Zheng' />
       <Icon
+        desc='Twitter Link'
+        icon={faTwitterSquare}
+        href='https://twitter.com/Jiajin_Zheng'
+      />
+      <Icon
+        desc='LinkedIn Link'
         icon={faLinkedin}
         href='https://www.linkedin.com/in/jacky-jiajin-zheng-76a64b164/'
       />
-      <Icon icon={faGithubSquare} href='https://github.com/jackytsheng' />
+      <Icon
+        desc='Github Link'
+        icon={faGithubSquare}
+        href='https://github.com/jackytsheng'
+      />
     </div>
   </div>
 );
