@@ -11,8 +11,7 @@ const Home = (props) => {
       <h4>SOFTWARE ENGINEER</h4>
       <div className={styles.seperator}></div>
       <p className={styles.description}>
-        A professional software engineer who delivery professional fullstack
-        solution
+        A software engineer who delivers full-stack solutions
       </p>
       <div className={styles.location}>
         <div className={styles.icon}>

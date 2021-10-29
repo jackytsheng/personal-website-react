@@ -7,12 +7,35 @@ export default (props) => (
     <SkillCategory
       {...props}
       category={'Frontend'}
-      skills={['HTML', 'CSS', 'Sass', 'JavaScript', 'React', 'Redux']}
+      skills={[
+        'HTML',
+        'CSS',
+        'Sass',
+        'JS',
+        'TS',
+        'Styled Component',
+        'React',
+        'React Hook',
+        'Angular',
+        'Redux',
+        'Jest',
+        'Testing Library',
+      ]}
     />
     <SkillCategory
       {...props}
       category={'Backend'}
-      skills={['Java', 'Spring Boot', 'Junit', 'Jwt', 'MySQL', 'C#', '.NET']}
+      skills={[
+        'Java',
+        'Spring Boot',
+        'Junit',
+        'Express',
+        'NodeJs',
+        'Jest',
+        'C#',
+        '.NET',
+        'xUnit',
+      ]}
     />
     <SkillCategory
       {...props}
