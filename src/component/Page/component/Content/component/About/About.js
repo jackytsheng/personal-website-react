@@ -39,7 +39,7 @@ class About extends React.Component {
       <div className={styles.wrapper}>
         <h1>ABOUT ME</h1>
         <div className={styles.seperator}></div>
-        <h2>A Passionate Aoftware Apprentice</h2>
+        <h2>A Passionate Software Apprentice</h2>
         <h4 className={styles.description}>
           I <span className={styles.emphasis}>Continuously Integrates</span> new
           knowledge and insight, and{' '}
