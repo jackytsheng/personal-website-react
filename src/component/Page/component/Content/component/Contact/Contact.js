@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Contact.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faWeixin } from '@fortawesome/free-brands-svg-icons';
+import { faWeixin, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = (props) => {
   return (
@@ -35,6 +35,14 @@ const Contact = (props) => {
         <div className={styles.detailItem}>
           <div className={styles.icon}>
             <FontAwesomeIcon icon={faWeixin} />
+          </div>
+          <div className={styles.description}>
+            <p>jackytsheng</p>
+          </div>
+        </div>
+        <div className={styles.detailItem}>
+          <div className={styles.icon}>
+            <FontAwesomeIcon icon={faInstagramSquare} />
           </div>
           <div className={styles.description}>
             <p>jackytsheng</p>
