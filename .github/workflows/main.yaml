@@ -14,10 +14,6 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: install 
-      - name: Run install
-        uses: borales/actions-yarn@v4
-        with:
-          cmd: install 
       - name: Build bundle for gh-page
         uses: borales/actions-yarn@v4
         with:
