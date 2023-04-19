@@ -1,12 +1,6 @@
 import React from 'react';
 import styles from './About.module.scss';
 import AboutSkill from './AboutSkill';
-import Pdf from './components/Jiajin_Zheng_Resume.pdf';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptop } from '@fortawesome/free-solid-svg-icons';
-import animationLaptop from './AnimationLaptop.module.scss';
-import animationDisplay from './AnimationDisplay.module.scss';
-import { CSSTransition } from 'react-transition-group';
 
 class About extends React.Component {
   constructor(props) {
@@ -39,48 +33,17 @@ class About extends React.Component {
       <div className={styles.wrapper}>
         <h1>ABOUT ME</h1>
         <div className={styles.seperator}></div>
-        <h2>A Passionate Software Apprentice</h2>
+        <h2>A life long learner</h2>
         <h4 className={styles.description}>
-          I <span className={styles.emphasis}>Continuously Integrates</span> new
-          knowledge and insight, and{' '}
-          <span className={styles.emphasis}>Continuously Delivery</span> quality
-          solution
+          Over 3 years experience in various fullstack technologies, DevOps tools and in-depth Cloud knowledge. Committed maintain inquisitive mindset and continuously learning  
         </h4>
         <h2 className={styles.skill}>MY SKILLS</h2>
         <div className={styles.UnderlineSeperator}></div>
         <div className={styles.window}>
-          <div div className={styles.laptopScreen}>
-            <CSSTransition
-              timeout={500}
-              unmountOnExit
-              in={!this.state.show}
-              classNames={{ ...animationLaptop }}
-            >
-              <div className={styles.laptop}>
-                <FontAwesomeIcon icon={faLaptop} />
-                <div className={styles.clickMe}>
-                  <div className={styles.click} onClick={this.handleClick}>
-                    <span className={styles.one}>C</span>
-                    <span className={styles.two}>L</span>
-                    <span className={styles.three}>I</span>
-                    <span className={styles.four}>C</span>
-                    <span className={styles.five}>K</span>
-                  </div>
-                </div>
-              </div>
-            </CSSTransition>
-          </div>
-          <CSSTransition
-            timeout={1000}
-            unmountOnExit
-            in={this.state.show}
-            classNames={{ ...animationDisplay }}
-          >
             <AboutSkill
               current={this.state.current}
               onClick={this.toggleDropDown}
             />
-          </CSSTransition>
         </div>
         {/* Come back and uncomment this when I need to include the Resume again */}
         {/* 

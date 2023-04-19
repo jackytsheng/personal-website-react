@@ -34,11 +34,11 @@ const Nav = ({ current, handleClick }) => (
       href='https://www.youtube.com/channel/UCvNmoHGEeNvE442gZv8qm9w'
       onClick={(e, url) => {}}
     />
-    <Item
+    {/* <Item
       desc='Blog Link'
       href='https://blog.jiajinzheng.com'
       onClick={(e, url) => {}}
-    />
+    /> */}
     <Item
       desc='Portfolio Link'
       href='https://gadget.jiajinzheng.com'

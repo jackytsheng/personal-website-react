@@ -1,141 +1,169 @@
 @import "./../../../../../../variable";
-.wrapper{
+
+.wrapper {
   position: relative;
-  color:$theme-color-dark-blue;
+  color: $theme-color-dark-blue;
   padding: 20px 50px;
-  height:518px;
+  height: 518px;
   width: $content-width;
-  background-color:$theme-color-ultra-white;
-  h1,h3{
+  background-color: $theme-color-ultra-white;
+
+  h1,
+  h3 {
     letter-spacing: 2px;
     margin: 0;
   }
-  h1{
+
+  h1 {
     font-size: 2.4em;
     font-weight: 700;
   }
-  h2{
+
+  h2 {
     font-weight: 400;
-    margin:0;
+    margin: 0;
   }
-  h4{
+
+  h4 {
     font-size: 1em;
     font-weight: 400;
   }
-  p{
+
+  p {
     font-weight: 300;
     font-size: 1em;
   }
 }
-.seperator{
-  margin: 15px 0 ;
+
+.seperator {
+  margin: 15px 0;
   width: 150px;
   border: solid 2px $theme-color-dark-blue;
 }
-.UnderlineSeperator{
-  margin: 15px 0 ;
+
+.UnderlineSeperator {
+  margin: 15px 0;
   width: 150px;
   border: solid 2px $theme-color-dark-blue;
 }
-.detailItem{
+
+.detailItem {
   display: flex;
-  width:300px;
+  width: 300px;
   align-items: center;
-  .icon{
+
+  .icon {
     display: flex;
     justify-content: center;
-    width:50px;
+    width: 50px;
   }
-  .description{
-    p{
-    font-weight: 400;
-  }
+
+  .description {
+    p {
+      font-weight: 400;
+    }
   }
 }
-.skill{
+
+.skill {
   font-size: 1.7em;
   font-weight: 700;
   margin: 0;
 }
-.emphasis{
+
+.emphasis {
   font-weight: 600;
 }
-.title{
+
+.title {
   display: flex;
   width: 200px;
-  padding-left:20px;
+  padding-left: 20px;
   margin-bottom: 10px;
   border-radius: 2px;
-  box-shadow: 4px 4px 8px -4px rgba(46,61,102,0.85);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  h2{
-    display:block;
-    flex:1;
+
+  h2 {
+    display: block;
+    flex: 1;
   }
-  &:hover{
+
+  &:hover {
     background-color: $theme-color-blue;
     color: $theme-color-ultra-white;
   }
-  .icon{
+
+  .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     transform: rotateZ(0deg);
     transition-property: transform;
     transition-duration: 0.3s;
   }
-  .iconActive{
+
+  .iconActive {
     transform: rotateZ(180deg);
   }
 }
-.detail{
+
+.detail {
   display: flex;
   flex-wrap: wrap;
 }
-.dropdown{
+
+.dropdown {
   overflow: hidden;
 }
-.resume{
+
+.resume {
   position: absolute;
-  bottom:5px;
-  right:5px;
-  padding:5px;
+  bottom: 5px;
+  right: 5px;
+  padding: 5px;
   transition-property: background-color;
   transition-duration: 0.2s;
-  .download{
-    transition-property: color,border-bottom;
+
+  .download {
+    transition-property: color, border-bottom;
     transition-duration: 0.2s;
     font-size: 1.5em;
     border-bottom: solid 3px $theme-color-blue;
     text-decoration: none;
-    color:$theme-color-blue;
+    color: $theme-color-blue;
   }
-   &:hover{
-      background-color: $theme-color-blue;
-      .download{
-        border-bottom: solid 3px $theme-color-ultra-white;
-        color:$theme-color-ultra-white;     
-  }
+
+  &:hover {
+    background-color: $theme-color-blue;
+
+    .download {
+      border-bottom: solid 3px $theme-color-ultra-white;
+      color: $theme-color-ultra-white;
     }
+  }
 }
-.laptop{
+
+.laptop {
   position: relative;
-  width:200px;
-  height:200px;
+  width: 200px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:$theme-color-blue;
+  color: $theme-color-blue;
   font-size: 10em;
 }
-.laptopScreen{
-  width:200px;
-  height:200px;
+
+.laptopScreen {
+  width: 200px;
+  height: 200px;
   overflow: hidden;
 }
-.clickMe{
+
+.clickMe {
   cursor: pointer;
   position: absolute;
   display: flex;
@@ -144,83 +172,117 @@
   width: 120px;
   height: 80px;
   bottom: 80px;
-  .click{
-    font-size: 30px;
-    font-weight:600;
-     span{
-  position: relative;
-  display: inline-block;
-  animation: blink 3s ease-in-out infinite;}
 
-  .one {
-    animation-delay: .1s;
-  }
-  .two {
-    animation-delay: .2s;
-  }
-  .three {
-    animation-delay: .3s;
-  }
-  .four {
-    animation-delay: .4s;
-  }
-  .five {
-    animation-delay: .5s;
-  }
+  .click {
+    font-size: 30px;
+    font-weight: 600;
+
+    span {
+      position: relative;
+      display: inline-block;
+      animation: blink 3s ease-in-out infinite;
+    }
+
+    .one {
+      animation-delay: .1s;
+    }
+
+    .two {
+      animation-delay: .2s;
+    }
+
+    .three {
+      animation-delay: .3s;
+    }
+
+    .four {
+      animation-delay: .4s;
+    }
+
+    .five {
+      animation-delay: .5s;
+    }
   }
 }
-.window{
-  position:relative;
+
+.window {
+  position: relative;
   width: 100%;
 }
-.skillWrapper{
-  position: absolute;
-  top:0;
+
+.skillWrapper {
+  display: flex;
 }
 
+.left {
+  width: 250px;
+}
 
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex: 1;
+  height: 200px;
+  gap: 15px;
+}
 
 @keyframes blink {
-  0%,100%{
+
+  0%,
+  100% {
     opacity: 1;
   }
-  20%{
+
+  20% {
     opacity: 0.2;
   }
-  40%{
+
+  40% {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 860px){
- .wrapper{
-     width:100%;
-}
-}
-@media only screen and (max-width: 520px){
-  .wrapper{
-    height:100%;
-     h1{
-       font-size:30px;
-     }
-     h2{
-       font-size:20px;
-     }
-     h4{
-       font-size:15px;
-     }
+
+@media only screen and (max-width: 860px) {
+  .wrapper {
+    width: 100%;
   }
 }
-@media only screen and (max-width: 770px){
-.resume{
-  .download{
-    font-size: 1em;
+
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    height: 100%;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    h4 {
+      font-size: 15px;
+    }
+  }
+
+  .right {
+    flex-direction: column;
+    flex-wrap: nowrap;
   }
 }
+
+@media only screen and (max-width: 770px) {
+  .resume {
+    .download {
+      font-size: 1em;
+    }
+  }
 }
 
 
-@media only screen and (min-width: 520px) and (max-width: 620px){
-  .UnderlineSeperator{
-  margin: 5px 0 ;
- }
+@media only screen and (min-width: 520px) and (max-width: 620px) {
+  .UnderlineSeperator {
+    margin: 5px 0;
+  }
 }

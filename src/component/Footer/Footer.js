@@ -11,7 +11,7 @@ const Footer = () => (
   <div className={styles.wrapper}>
     <div className={styles.copyrightWrapper}>
       <p className={styles.copyright}>
-        Copyright &copy; 2022 Jiajin Zheng. All rights reserved.
+        Copyright &copy; 2023 Jiajin Zheng. All rights reserved.
       </p>
     </div>
     <div className={styles.filler}></div>
