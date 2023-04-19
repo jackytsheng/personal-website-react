@@ -6,10 +6,10 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
-      - name: Set Node.js 12.x
+      - name: Set Node.js 15.14.0
         uses: actions/setup-node@v3
         with:
-          node-version: 12.x
+          node-version: 15.14.0
       - name: Run install
         uses: borales/actions-yarn@v4
         with:
